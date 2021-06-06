@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 50px;
+  padding: 0;
+}
+div {
+  padding: 10px;
+  margin: 0;
+}
+img {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  /* padding: 10px 0; */
+  border: 2px solid black;
+}
+
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+  border: 3px solid black;
+}
+
+.result-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: fit-content;
+}
+#result1 {
+  border: 1px solid black;
+}
+
+#result2,
+#result3,
+#result4 {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#result2 img {
+  box-shadow: 0px 10px 50px lightgray;
+  margin: 10px;
+  width: 30%;
+}
+
+#result3 img:hover {
+  box-shadow: 0px 10px 50px dodgerblue;
+}
