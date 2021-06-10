@@ -12,16 +12,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
   </head>
   <body>
     <!-- challenge 1 -->
     <section id="challenge1">
       <h2>Challenge 1: Your Age in Days</h2>
       <div class="button-wrapper" id="button-wrapper1">
-        <button class="btn btn-primary btn-lg" onclick="ageInDays()">
-          Click Me
-        </button>
-        <button class="btn btn-danger btn-lg" onclick="reset()">Reset</button>
+        <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+        <button class="btn btn-danger" onclick="reset()">Reset</button>
       </div>
       <div class="result-wrapper">
         <div id="result1"></div>
@@ -32,7 +31,7 @@
       <h2>Challenge 2: Cat Generator</h2>
       <div class="button-wrapper" id="button-wrapper2">
         <button
-          class="btn btn-success btn-lg"
+          class="btn btn-success"
           id="cat-gen-btn"
           onclick="generateCat()"
         >
@@ -94,6 +93,38 @@
           <button class="btn btn-warning">Flash</button>
           <button class="btn btn-success">Tree</button>
         </form>
+      </div>
+    </section>
+    <!-- Challenge 5 -->
+    <section id="challenge5">
+      <h2>Challenge 5: Blackjack</h2>
+      <h3><span id="blackjack-result">Let's play!</span></h3>
+      <div id="blackjack-row1">
+        <div id="yourbox">
+          <h3>You: <span id="your-blackjack-result">0</span></h3>
+        </div>
+        <div id="dealerbox">
+          <h3>Dealer: <span id="dealer-blackjack-result">0</span></h3>
+        </div>
+      </div>
+      <div id="blackjack-row2">
+        <button class="btn btn-primary mr-2" id="bj-hit-btn">Hit</button>
+        <button class="btn btn-warning mr-2" id="bj-stand-btn">Stand</button>
+        <button class="btn btn-danger" id="bj-deal-btn">Deal</button>
+      </div>
+      <div id="blackjack-row3">
+        <table id="bj-table-result">
+          <tr>
+            <th>Wins</th>
+            <th>Loses</th>
+            <th>Draws</th>
+          </tr>
+          <tr>
+            <td><span id="wins">0</span></td>
+            <td><span id="loses">0</span></td>
+            <td><span id="draws">0</span></td>
+          </tr>
+        </table>
       </div>
     </section>
 

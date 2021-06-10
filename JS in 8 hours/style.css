@@ -19,6 +19,12 @@ section {
   /* padding: 10px 0; */
   border: 2px solid black;
 }
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
 
 .button-wrapper {
   width: 100%;
@@ -44,7 +50,7 @@ section {
 #result2,
 #result3,
 #result4 {
-  padding: 0;
+  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -57,4 +63,44 @@ section {
 
 #result3 img:hover {
   box-shadow: 0px 10px 50px dodgerblue;
+}
+#bj-table-result {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+#bj-table-result th,
+#bj-table-result td {
+  border: 1px solid black;
+}
+
+#blackjack-row1 {
+  background-image: url(https://t3.ftcdn.net/jpg/03/25/38/64/360_F_325386410_7XLHgFBmPH10k0GCUXbikWCAeFFC8145.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: white;
+}
+#blackjack-row1 div {
+  flex: 1;
+  border: 1px solid black;
+  margin: 5px;
+  height: 400px;
+}
+#blackjack-row1 div img {
+  max-width: 20%;
+  margin: 10px;
+}
+#blackjack-row2 {
+  border: 1px solid black;
+  background-image: url(https://t3.ftcdn.net/jpg/03/25/38/64/360_F_325386410_7XLHgFBmPH10k0GCUXbikWCAeFFC8145.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
