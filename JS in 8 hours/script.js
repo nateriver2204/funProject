@@ -355,3 +355,45 @@ function showResult(winner) {
     document.querySelector("#blackjack-result").style.color = messageColor;
   }
 }
+
+//Challenge 6: AJAX & API's with JS
+function getTen() {
+  document.querySelector("#result6").innerHTML = "";
+  let url = "https://randomuser.me/api/?results=10";
+  fetch(url)
+    .then((resp) => resp.json())
+    .then((data) => {
+      let authors = data.results;
+      console.log(authors);
+      for (const author of authors) {
+        let div = document.createElement("div");
+        let image = document.createElement("img");
+        let p = document.createElement("p");
+        p.textContent = `${author.name.title}.${author.name.first}${author.name.last}`;
+        image.src = author.picture.large;
+        div.appendChild(image);
+        div.appendChild(p);
+        document.querySelector("#result6").appendChild(div);
+      }
+    });
+}
+function getFive() {
+  document.querySelector("#result6").innerHTML = "";
+  let url = "https://randomuser.me/api/?results=5";
+  fetch(url)
+    .then((resp) => resp.json())
+    .then((data) => {
+      let authors = data.results;
+      console.log(authors);
+      for (const author of authors) {
+        let div = document.createElement("div");
+        let image = document.createElement("img");
+        let p = document.createElement("p");
+        p.textContent = `${author.name.title}.${author.name.first}${author.name.last}`;
+        image.src = author.picture.large;
+        div.appendChild(image);
+        div.appendChild(p);
+        document.querySelector("#result6").appendChild(div);
+      }
+    });
+}

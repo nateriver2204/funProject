@@ -16,7 +16,7 @@ section {
   width: 80%;
   margin: auto;
   text-align: center;
-  /* padding: 10px 0; */
+  padding: 10px 0;
   border: 2px solid black;
 }
 h2 {
@@ -103,4 +103,21 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+#result6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#result6 div {
+  background-color: darkorange;
+  display: flex;
+  align-items: center;
+}
+
+#result6 div p {
+  font-size: 18px;
+  font-weight: bold;
 }
